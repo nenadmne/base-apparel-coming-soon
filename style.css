@@ -1,0 +1,218 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+html, main, .right, .right img, .type-div, .email {
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    min-height: 813.38px;
+    min-width: 375px;
+}
+
+body, main, .left, .right, .left-top, .left-bottom, .text-div, .bottom-bot, .type-div, .button-div, .mail-div, .border-div{
+    display: flex;
+    box-sizing: border-box;
+}
+
+main, .left, .text-div, .left-bottom {
+    flex-direction: column;
+}
+
+.type-div, .left-top {
+    flex-direction: row;
+}
+
+body, .mail-div, .left-top {
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    padding: 10% 5%;
+}
+
+main {
+    width: 337.5px;
+}
+
+.left-top {
+    padding: 5% 10%;
+}
+
+.border-div, .text-div, .left-top {
+    justify-content: left;
+}
+
+.border-div {
+    padding: 3.5%;
+    border: 3px solid;
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
+.left-bottom {
+    padding: 15% 8% 20% 8%;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    height: 446.64px;
+}
+
+.bottom-top {
+    margin-bottom: 10%;
+}
+
+h1 {
+    margin-bottom: 5%;
+}
+
+h1, .span {
+    font-size: 2.4rem;
+    letter-spacing: 0.7rem;
+}
+
+.span, .upper, .down{
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+h1, .span, p {
+    text-align: center;
+}
+
+.type-div {
+    border: 1px solid hsl(0, 80%, 86%);
+    justify-content: space-between;
+}
+
+.left {
+    order: 3;
+    position: relative;
+}
+
+.type-div, button {
+    border-radius: 2rem;
+}
+
+.mail-div {
+    padding-left: 10%;
+    flex-basis: 100%;
+    justify-content: left;
+}
+
+.email {
+    font-weight: 400;
+}
+
+.email, .down, .upper {
+    font-size: 0.8rem;
+}
+
+.upper, .down {
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.button img, .upper, .down {
+    vertical-align: middle;
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+button {
+    width: 70px;
+    height: 47px;
+    border: 0;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 0;
+    box-shadow: 0px 8px 15px rgba(105, 95, 95, 0.842);
+}
+
+button:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+#para, #falsepara {
+    align-self: flex-start;
+    margin-left: 10%;
+    font-weight: 300;
+}
+
+#falseimg {
+    width: 1rem;
+    position: absolute;
+    left: 64%;
+    top: 72.5%;
+}
+
+@media (min-width: 700px) {
+
+    main {
+        width: 900px;
+        height: 550px;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .left-top {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        padding: 2%;
+        left: 6%;
+        top: 12%;
+    }
+
+    .left {
+        flex-basis: 55%;
+        order: 1;
+        height: 100%;
+    }
+
+    .right {
+        flex-basis: 45%;
+        order: 2;
+    }
+
+    .right img {
+        content: url('./images/hero-desktop.jpg');
+    }
+
+    .left-bottom {
+        height: 100%;
+        padding: 30% 15% 20% 15%;
+    }
+
+    h1, p {
+        text-align: left;
+    }
+
+    #falseimg {
+        top: 73.5%;
+    }
+
+    html, body {
+        height: 100%;
+        min-height: 550px;
+        min-width: 900px;
+        width: 100%;
+    }
+
+    body {
+        padding: 0%;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./jscript.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+
+</head>
+  <body>
+    <main>
+        <div class="left-top">
+          <img src="./images/logo.svg" alt="">
+        </div>
+  
+        <div class="left">
+  
+          <div id="left-bottom" class="left-bottom">
+            <div class="bottom-top">
+              <h1> WE'RE <span class="span"> COMING </span> <span class="span"> SOON </span></h1>
+              <p> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals. </p>
+            </div>
+            <div class="bottom-bot">
+              <div id="type-div" class="type-div">
+                <div class="mail-div" onclick="remove()"> <span contenteditable="true" id="email" class="email"> Email Address </span> </div>
+                <div class="button-div">
+                  <button class="button" onclick="emailCheck()">
+                    <img src="./images/icon-arrow.svg" alt="icon-arrow">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="right">
+        <img src="./images/hero-mobile.jpg" alt="pictr">
+      </div>
+
+    </main>
+  </body>
+</html>
+
