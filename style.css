@@ -6,7 +6,7 @@
     font-weight: 300;
 }
 
-html, main, .right, .right img, .type-div, .email {
+html, main, .right, .right img, .type-div {
     width: 100%;
 }
 
@@ -100,13 +100,18 @@ h1, .span, p {
 }
 
 .mail-div {
-    padding-left: 10%;
+    padding-left: 5%;
     flex-basis: 100%;
     justify-content: left;
+    text-align: left;
 }
 
 .email {
     font-weight: 400;
+    border: 0;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .email, .down, .upper {
@@ -156,7 +161,7 @@ button:hover {
     width: 1rem;
     position: absolute;
     left: 64%;
-    top: 72.5%;
+    top: 72%;
 }
 
 @media (min-width: 700px) {
